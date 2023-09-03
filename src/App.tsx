@@ -1,9 +1,19 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+
+import Home from "./components/Home";
 
 function App() {
-  return <div className="App">App</div>;
+  return (
+    <div className="" style={{ height: "100vh" }}>
+      <div
+        className="min-w-full flex items-center justify-center bg-sky-500/75"
+        style={{ height: "10%" }}
+      >
+        contact pae
+      </div>
+      <Home />
+    </div>
+  );
 }
 
 export default App;
