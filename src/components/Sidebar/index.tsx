@@ -9,14 +9,10 @@ const Sidebar: React.FC<sidebarType> = ({ setFlag }) => {
   return (
     <div className="flex flex-col gap-24 px-4 py-10">
       <div style={{ cursor: "pointer" }} onClick={() => setFlag(true)}>
-        <a href="" className="text-blue-500">
-          Contact
-        </a>
+        <span className="text-blue-500">Contact</span>
       </div>
       <div style={{ cursor: "pointer" }} onClick={() => setFlag(false)}>
-        <a className="text-blue-500" href="">
-          Charts and Maps
-        </a>
+        <span className="text-blue-500">Charts and Maps</span>
       </div>
     </div>
   );
