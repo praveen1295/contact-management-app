@@ -9,7 +9,7 @@ function App() {
         className="min-w-full flex items-center justify-center bg-sky-500/75 text-4xl"
         style={{ height: "10%" }}
       >
-        contact pae
+        contact page
       </div>
       <Home />
     </div>
