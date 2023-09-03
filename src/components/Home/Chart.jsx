@@ -72,7 +72,7 @@ function App() {
   ];
 
   return (
-    <div className="App">
+    <div className="p-8">
       <h1>COVID-19 Dashboard</h1>
       <div>
         <h2>Worldwide Data</h2>
