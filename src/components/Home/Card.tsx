@@ -31,7 +31,7 @@ const Card: React.FC<CardProps> = ({
   };
   return (
     <div className="flex flex-col items-center gap-4">
-      <div className="w-64 p-4 rounded-md bg-orange-300">
+      <div className="w-64 h-36 p-4 rounded-md bg-orange-300 border border-indigo-600 bg-white">
         <div className="flex">
           <div className="w-16">Name: </div>
           <span>{item.name}</span>
@@ -49,7 +49,7 @@ const Card: React.FC<CardProps> = ({
       </button>
       <button
         onClick={() => deleteItem(idx)}
-        className="w-54 bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="w-54 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
       >
         DELETE
       </button>

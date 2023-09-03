@@ -162,24 +162,30 @@ const Contact = () => {
         </form>
       )}
 
-      <div className="min-w-full flex flex-wrap gap-10 justify-center">
-        {contactList.map((item, idx) => {
-          return (
-            <Card
-              key={idx}
-              item={item}
-              idx={idx}
-              setEditIndex={setEditIndex}
-              setFirstName={setFirstName}
-              setLastName={setLastName}
-              setShowForm={setShowForm}
-              setEdit={setEdit}
-              setSelectedOption={setSelectedOption}
-              deleteItem={deleteItem}
-            />
-          );
-        })}
-      </div>
+      {contactList.length > 0 ? (
+        <div className="min-w-full flex flex-wrap gap-10 justify-center">
+          {contactList.map((item, idx) => {
+            return (
+              <Card
+                key={idx}
+                item={item}
+                idx={idx}
+                setEditIndex={setEditIndex}
+                setFirstName={setFirstName}
+                setLastName={setLastName}
+                setShowForm={setShowForm}
+                setEdit={setEdit}
+                setSelectedOption={setSelectedOption}
+                deleteItem={deleteItem}
+              />
+            );
+          })}
+        </div>
+      ) : (
+        <div className="w-80 text-center text-xl flex flex-wrap gap-10 justify-center border border-indigo-600 p-5 bg-white">
+          No contact fount please add contact from create contact button
+        </div>
+      )}
     </div>
   );
 };
